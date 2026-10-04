@@ -1,23 +1,34 @@
 const express = require("express");
 const cors = require("cors");
 
-const contactRoutes = require("./routes/contact");
-const noteRoutes = require("./routes/note");
-
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/contact", contactRoutes);
-app.use("/api/notes", noteRoutes);
-
+// Home Route
 app.get("/", (req, res) => {
-  res.send("Welcome to NotifyHub Backend");
+  res.send("NotifyHub Server Running...");
+});
+
+// Contact Route
+app.post("/contact", (req, res) => {
+  const { name, email, department, message } = req.body;
+
+  console.log("New Contact Message");
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Department:", department);
+  console.log("Message:", message);
+
+  res.json({
+    success: true,
+    message: "Message received successfully."
+  });
 });
 
 const PORT = 5001;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server running on port: ${PORT}`);
 });
