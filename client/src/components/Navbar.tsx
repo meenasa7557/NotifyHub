@@ -4,17 +4,27 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">NotifyHub</div>
+      <Link to="/" className="navbar-logo">
+        NotifyHub
+      </Link>
 
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><a href="#announcements">Announcements</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button className="urgent-btn">Urgent</button>
-        </li>
-      </ul>
+      <div className="navbar-links">
+        <Link to="/">Home</Link>
+
+        <Link to="/announcements">Announcements</Link>
+
+        <Link to="/events">Events</Link>
+
+        <Link to="/contact">Contact</Link>
+
+        <Link to="/login" className="navbar-login">
+          Login
+        </Link>
+
+        <Link to="/register" className="navbar-register">
+          Register
+        </Link>
+      </div>
     </nav>
   );
 }

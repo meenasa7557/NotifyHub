@@ -1,0 +1,124 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
+  box-sizing: border-box;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(30, 64, 175, 0.12);
+  box-sizing: border-box;
+}
+
+.login-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #172554;
+  font-size: 28px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin: 12px 0 28px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  margin: 14px 0 8px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.auth-button {
+  margin-top: 24px;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background: #1d4ed8;
+}
+
+.auth-message {
+  text-align: center;
+  color: #2563eb;
+  margin-top: 18px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 24px;
+  color: #64748b;
+}
+
+.auth-switch a,
+.back-home {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-switch a:hover,
+.back-home:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px 20px;
+  }
+}

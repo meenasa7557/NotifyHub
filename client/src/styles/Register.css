@@ -1,0 +1,119 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
+  box-sizing: border-box;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(30, 64, 175, 0.12);
+  box-sizing: border-box;
+}
+
+.register-logo {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 18px;
+  border-radius: 15px;
+  background: #2563eb;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.register-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #172554;
+  font-size: 28px;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin: 12px 0 22px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card label {
+  margin: 12px 0 7px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+}
+
+.register-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.register-button {
+  margin-top: 22px;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #1d4ed8;
+}
+
+.register-message {
+  text-align: center;
+  color: #2563eb;
+  line-height: 1.5;
+}
+
+.register-switch {
+  text-align: center;
+  color: #64748b;
+  margin-top: 22px;
+}
+
+.register-switch a,
+.register-back {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-back {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 25px 20px;
+  }
+}
